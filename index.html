@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&subset=cyrillic" rel="stylesheet">
+    <title>Inputing & converting array-list to JSON or XML</title>
+    <!-- Test Task for "SD Solutions" company -->
+    <!-- Author: Slava Mlinsky - slavamlinsky@gmail.com -->
+</head>
+<body>
+    <div class="container">
+    <div class="main">
+        <h1 class="gradient-text">Array to XML generator</h1>   
+        <br/>     
+        <label>Name/Value Pair</label>
+        <div class="form-row">
+            <div class="form-input">
+                
+                <input name="input" type="text" placeholder="Name=Value"/>
+            </div>
+            <div class="form-button">
+                <button onclick="addRecord()">Add</button>
+            </div> 
+        </div>
+        <label>Name/Value Pair List</label>
+        <div class="form-row">
+            <div class="form-input">                
+                <textarea readonly></textarea>
+            </div>
+            <div class="form-button">
+                <button onclick="sortByName()">Sort by Name</button>                
+                
+                <button onclick="sortByValue()">Sort by Value</button>
+                <br>
+                <button onclick="deleteAll()">Delete</button>                
+                <br>
+                <button onclick="showXML()">Show XML</button>
+                
+                <button onclick="showJSON()">Show JSON</button>
+
+            </div>
+        </div>
+        <div class="result"></div>
+    </div>
+    </div>
+    <!-- 
+    <ul>
+        <li>Пункт №1</li>
+        <li>Пункт №2</li>
+    </ul>
+     -->
+
+     <!-- <div>
+
+     </div> 
+    <button class="button">Нажми меня!</button> -->
+
+    <script type="text/javascript" src='./js/index.js'></script>
+</body>
+</html>
